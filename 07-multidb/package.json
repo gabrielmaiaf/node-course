@@ -1,0 +1,17 @@
+{
+  "name": "07-multidb",
+  "version": "1.0.0",
+  "description": "Processos que estão rodando na máquina\r ```bash\r docker ps\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.2.4"
+  }
+}
