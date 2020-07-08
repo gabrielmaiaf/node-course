@@ -22,7 +22,7 @@ describe('MongoDB Strategy', function () {
   });
   it('MongoDB connection', async () => {
     const result = await context.isConnected();
-    const expected = 'Conectado';
+    const expected = 'Connected';
 
     assert.deepEqual(result, expected);
   });
