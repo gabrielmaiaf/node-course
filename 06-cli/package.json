@@ -1,0 +1,20 @@
+{
+  "name": "06-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter=nyan",
+    "test-landing": "mocha --reporter=landing",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  },
+  "dependencies": {
+    "commander": "^5.1.0"
+  }
+}
