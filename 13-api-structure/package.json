@@ -1,0 +1,21 @@
+{
+  "name": "13-api-structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "mongoose": "^5.9.21",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.2.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
