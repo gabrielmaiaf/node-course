@@ -23,7 +23,6 @@ const HeroiSchema = require('./db/strategies/mongodb/schemas/heroisSchema');
 const UserSchema = require('./db/strategies/postgres/schemas/userSchema');
 const HeroRoutes = require('./routes/heroRoutes');
 const AuthRoutes = require('./routes/authRoutes');
-const UtilRoutes = require('./routes/utilRoutes');
 
 const JWT_SECRET = process.env.JWT_KEY;
 
@@ -82,8 +81,7 @@ async function main() {
 
   app.route([
     ...mapRoutes(new HeroRoutes(contextMDB), HeroRoutes.methods()),
-    ...mapRoutes(new AuthRoutes(JWT_SECRET, contextPG), AuthRoutes.methods()),
-    ...mapRoutes(new UtilRoutes(), UtilRoutes.methods())
+    ...mapRoutes(new AuthRoutes(JWT_SECRET, contextPG), AuthRoutes.methods())
   ]);
 
   await app.start();

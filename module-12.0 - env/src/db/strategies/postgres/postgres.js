@@ -1,4 +1,4 @@
-const ICrud = require('../interfaces/interfaceCrud');
+const ICrud = require('./../interfaces/interfaceCrud');
 const Sequelize = require('sequelize');
 
 class Postgres extends ICrud {
@@ -20,8 +20,7 @@ class Postgres extends ICrud {
 
   static async connect() {
     const connection = new Sequelize(process.env.POSTGRES_URL, {
-      dialect: 'postgres',  
-      quoteIdentifiers: false,
+        quoteIdentifiers: false,
         logging: false,
         ssl: process.env.SSL_DB,
         dialectOptions: {
